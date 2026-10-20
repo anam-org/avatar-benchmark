@@ -1,0 +1,62 @@
+{
+  "questions": [
+    {
+      "dimension": "Visual quality",
+      "statement": "The appearance of the avatar was visually pleasing and free of obvious flaws."
+    },
+    {
+      "dimension": "Naturalness",
+      "statement": "The avatar's behavior seemed natural and lifelike."
+    },
+    {
+      "dimension": "Lip sync quality",
+      "statement": "The mouth and facial movements matched the spoken audio."
+    },
+    {
+      "dimension": "Interruptibility",
+      "statement": "I could interrupt the avatar as I would in a natural conversation."
+    },
+    {
+      "dimension": "Response time",
+      "statement": "The avatar’s response time felt natural and as expected in conversation."
+    },
+    {
+      "dimension": "Overall experience",
+      "statement": "I enjoyed talking to this avatar and found the overall experience positive."
+    }
+  ],
+  "categories": [
+    {
+      "label": "Strongly disagree",
+      "score": -2
+    },
+    {
+      "label": "Disagree",
+      "score": -1
+    },
+    {
+      "label": "Neutral",
+      "score": 0
+    },
+    {
+      "label": "Agree",
+      "score": 1
+    },
+    {
+      "label": "Strongly agree",
+      "score": 2
+    }
+  ],
+  "introduction": "Thank you for participating in our interactive avatar evaluation study!\n\n**Please use a maximised browser window** on a desktop or laptop for this study — the avatar video fills your window, so bigger is better.\n\nOn the next screen, you will be presented with an interactive avatar. You will be able to talk to the avatar using your microphone.\n\nTogether with the avatar, you will play a game of **20 Questions**. You will pick a word, and the avatar will try to guess what that word is by asking \"yes/no\" questions. You can answer simply with \"yes\" or \"no\", but we encourage you to talk freely to the avatar as you would in a normal conversation. Keep talking to the avatar until the game finishes, which may take up to 2 minutes.\n\nBelow the avatar, you will be presented with six statements. Please indicate how much you agree with each statement after you have finished speaking with the avatar.\n\nAfter a practice round, you will play 8 rounds of 20 Questions with different avatars.\n\n**Please note:** during each conversation, the avatar's video and audio and your microphone audio are recorded and analysed as part of this study.\n\n*If you experience technical issues like avatars not loading, please let us know after the study.*",
+  "iframeSize": null,
+  "topics": {
+    "animals": "fish, zebra, cat, ant, cow, spider",
+    "clothing": "jeans, sneakers, sunglasses, boots, hat, suit",
+    "food": "apple, pizza, fork, lunch, orange juice, sandwich",
+    "furniture": "chair, table, sofa, bed, desk, dresser, bookshelf, cabinet",
+    "professions": "doctor, teacher, firefighter, pilot, chef, artist, police officer, musician",
+    "sports": "tennis, golf, swimming, diving, basketball, hockey",
+    "transportation": "car, road, bus, bicycle, train, airplane"
+  },
+  "sessionCapSeconds": 120
+}

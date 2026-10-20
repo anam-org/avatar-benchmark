@@ -1,0 +1,63 @@
+{
+  "f2": {
+    "slot": "f2",
+    "studyName": "Mia",
+    "topic": "clothing",
+    "avatarId": "edf6fdcb-acab-44b8-b974-ded72665ee26",
+    "voiceId": "8cc80a30-4fc0-11f1-84b0-52bacf74fa75",
+    "catalogueDisplayName": "Mia",
+    "variantName": "studio",
+    "activeVersion": "cara-3",
+    "availableVersions": [
+      "cara-3",
+      "cara-4",
+      "cara-4-latest"
+    ],
+    "pinnedModel": "cara-4"
+  },
+  "f3": {
+    "slot": "f3",
+    "studyName": "Hana",
+    "topic": "food",
+    "avatarId": "cc97774e-853d-4ca0-b31c-d1d927251b00",
+    "voiceId": "9163f669-4fc0-11f1-84b0-52bacf74fa75",
+    "catalogueDisplayName": "Hana",
+    "variantName": "",
+    "activeVersion": "cara-4",
+    "availableVersions": [
+      "cara-4",
+      "cara-4-latest"
+    ],
+    "pinnedModel": "cara-4"
+  },
+  "m2": {
+    "slot": "m2",
+    "studyName": "Simon",
+    "topic": "professions",
+    "avatarId": "9ed85ab6-595b-4491-8f55-94379560e1cf",
+    "voiceId": "91b4ce0f-4fc0-11f1-84b0-52bacf74fa75",
+    "catalogueDisplayName": "Simon",
+    "variantName": "",
+    "activeVersion": "cara-4",
+    "availableVersions": [
+      "cara-4",
+      "cara-4-latest"
+    ],
+    "pinnedModel": "cara-4"
+  },
+  "m3": {
+    "slot": "m3",
+    "studyName": "Robert",
+    "topic": "sports",
+    "avatarId": "8bbf1f70-c286-4da9-8bd7-e99fcf9834a6",
+    "voiceId": "45216c5e-1e76-4a7d-9e23-c6fb73507f82",
+    "catalogueDisplayName": "Robert",
+    "variantName": "",
+    "activeVersion": "cara-4",
+    "availableVersions": [
+      "cara-4",
+      "cara-4-latest"
+    ],
+    "pinnedModel": "cara-4"
+  }
+}

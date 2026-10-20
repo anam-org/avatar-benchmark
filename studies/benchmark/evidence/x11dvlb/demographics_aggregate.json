@@ -1,0 +1,84 @@
+{
+  "n_raters": 60,
+  "age": {
+    "52": 3,
+    "45": 3,
+    "34": 2,
+    "51": 1,
+    "35": 1,
+    "33": 2,
+    "44": 1,
+    "26": 6,
+    "29": 3,
+    "38": 3,
+    "32": 3,
+    "23": 1,
+    "47": 2,
+    "37": 3,
+    "42": 1,
+    "60": 1,
+    "20": 2,
+    "48": 2,
+    "36": 3,
+    "53": 1,
+    "46": 1,
+    "24": 2,
+    "49": 1,
+    "27": 4,
+    "57": 1,
+    "28": 1,
+    "55": 1,
+    "54": 1,
+    "31": 2,
+    "50": 1
+  },
+  "sex": {
+    "Female": 18,
+    "Male": 41
+  },
+  "ethnicity": {
+    "White": 40,
+    "Asian": 9,
+    "Mixed": 4,
+    "Black": 6
+  },
+  "employment": {
+    "Full-Time": 28,
+    "Unemployed (and job seeking)": 12,
+    "Not in paid work (e.g. homemaker', 'retired or disabled)": 3,
+    "Part-Time": 12,
+    "Other": 1
+  },
+  "student": {
+    "False": 52,
+    "True": 6
+  },
+  "nationality": {
+    "United Kingdom": 21,
+    "United States": 15,
+    "Romania": 1,
+    "Canada": 12,
+    "Ireland": 1,
+    "South Africa": 1,
+    "Netherlands": 1,
+    "Nigeria": 2,
+    "Russian Federation": 1,
+    "Turkey": 1,
+    "Australia": 3
+  },
+  "country_of_residence": {
+    "United Kingdom": 21,
+    "United States": 16,
+    "Canada": 14,
+    "Ireland": 1,
+    "Netherlands": 2,
+    "Germany": 2,
+    "Australia": 3
+  },
+  "primary_language": {
+    "English": 56,
+    "Dutch": 1,
+    "Russian": 1,
+    "Turkish": 1
+  }
+}

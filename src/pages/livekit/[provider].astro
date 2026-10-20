@@ -1,0 +1,46 @@
+---
+export const prerender = false;
+import { LiveKitAvatar } from "../../components/avatars/LiveKitAvatar";
+import Layout from "../../layouts/Layout.astro";
+import { slotsFor } from "../../lib/arms";
+
+// The URL carries only {provider, slot, topic, ...}; avatar IDs resolve
+// server-side. `provider` is the arm key, and an arm that names no cast fails
+// here rather than at mint, so a mistyped arm shows as a broken stimulus
+// instead of silently running the base arm.
+
+const { provider } = Astro.params;
+const q = Astro.url.searchParams;
+const slot = q.get("slot");
+const topic = q.get("topic");
+const name = q.get("name") || undefined;
+const training = q.get("training") === "true";
+
+const slots = provider === undefined ? undefined : slotsFor(provider);
+const known = slots !== undefined;
+const validSlot = known && slot !== null && slot in slots!;
+const invalid = !known || !validSlot || !topic;
+---
+
+<Layout class="w-screen h-screen bg-black">
+  {
+    invalid ? (
+      <div class="flex items-center justify-center w-full h-full text-white text-center p-5">
+        {!known
+          ? `Unknown provider "${provider}".`
+          : !validSlot
+            ? "Missing or unknown slot."
+            : "Missing topic."}
+      </div>
+    ) : (
+      <LiveKitAvatar
+        client:only="react"
+        provider={provider!}
+        avatarSlot={slot!}
+        topic={topic!}
+        name={name}
+        training={training}
+      />
+    )
+  }
+</Layout>

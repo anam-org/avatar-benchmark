@@ -1,0 +1,17 @@
+provider,slot,avatar_name,avatar_or_replica_id,voice_id
+tavus-phoenix-4-5,f2,Mia,rca764a6a197,
+tavus-phoenix-4-5,f3,Hana,r4067604db72,
+tavus-phoenix-4-5,m2,Simon,r8495a788aa1,
+tavus-phoenix-4-5,m3,Robert,r79996137c01,
+heygen,f2,Mia,0f563214-1cb5-4dc0-a2f9-43f44e5e6b57,4f3b1e99-b580-4f05-9b67-a5f585be0232
+heygen,f3,Hana,65f9e3c9-d48b-4118-b73a-4ae2e3cbb8f0,62bbb4b2-bb26-4727-bc87-cfb2bd4e0cc8
+heygen,m2,Simon,dc2935cf-5863-4f08-943b-c7478aea59fb,b139a8fe-7240-4454-ac37-8c68aebcee41
+heygen,m3,Robert,64b526e4-741c-43b6-a918-4e40f3261c7a,9c8b542a-bf5c-4f4c-9011-75c79a274387
+lemonslice,f2,Mia,agent_a1fc5a6f8a7c6d76,
+lemonslice,f3,Hana,agent_ce9d76511d157872,
+lemonslice,m2,Simon,agent_e5a5ab2793a307bd,
+lemonslice,m3,Robert,agent_566b81d0362eda9f,
+anam,f2,Mia,edf6fdcb-acab-44b8-b974-ded72665ee26,8cc80a30-4fc0-11f1-84b0-52bacf74fa75
+anam,f3,Hana,cc97774e-853d-4ca0-b31c-d1d927251b00,9163f669-4fc0-11f1-84b0-52bacf74fa75
+anam,m2,Simon,9ed85ab6-595b-4491-8f55-94379560e1cf,91b4ce0f-4fc0-11f1-84b0-52bacf74fa75
+anam,m3,Robert,8bbf1f70-c286-4da9-8bd7-e99fcf9834a6,45216c5e-1e76-4a7d-9e23-c6fb73507f82

@@ -1,0 +1,70 @@
+# Deploys the harness worker to Cloudflare (manual trigger only).
+#
+# Required repository secrets:
+#   CLOUDFLARE_API_TOKEN   - API token with Workers Scripts:Edit on the account
+#   CLOUDFLARE_ACCOUNT_ID  - the Cloudflare account id owning the worker
+#
+# Provider API keys are Worker secrets (set once via `wrangler secret put`,
+# they live only in Cloudflare) — never repository secrets, never in code.
+#
+# The study must be named. Its wrangler.jsonc is copied to the repo root
+# before the build, because the Astro Cloudflare adapter bakes the root
+# config into dist/server/wrangler.json — the deploy target is decided at
+# build time, not by a -c flag at deploy time.
+name: deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      study:
+        description: which study's worker to deploy
+        required: true
+        type: choice
+        options: [benchmark]
+        default: benchmark
+
+jobs:
+  # Gate the deploy on the two parity checks.
+  checks:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: pip install -e packages/stimulus
+      - run: ./tools/check_token_parity.sh
+      - run: ./tools/check_evidence_payload.sh
+
+  deploy:
+    needs: checks
+    runs-on: ubuntu-latest
+    # Checkout and a Cloudflare deploy; nothing is written back to the repo.
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: select the study's worker
+        run: |
+          cp "studies/${{ inputs.study }}/wrangler.jsonc" wrangler.jsonc
+          echo "deploying $(grep '\"name\"' wrangler.jsonc)"
+      - run: npm run build
+        env:
+          # (see lib/api.ts WORKER_COMMIT)
+          PUBLIC_WORKER_COMMIT: ${{ github.sha }}
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

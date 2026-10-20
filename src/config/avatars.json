@@ -1,0 +1,136 @@
+{
+  "names": {
+    "f2": "Mia",
+    "f3": "Hana",
+    "m2": "Simon",
+    "m3": "Robert"
+  },
+  "providers": {
+    "tavus": {
+      "f2": {
+        "replicaId": "r291e545fd67"
+      },
+      "f3": {
+        "replicaId": "r55e6793f10f"
+      },
+      "m2": {
+        "replicaId": "rf8f3aa4b33e"
+      },
+      "m3": {
+        "replicaId": "r4ba1277e4fb"
+      }
+    },
+    "tavus-phoenix-4-5": {
+      "f2": {
+        "replicaId": "rca764a6a197",
+        "note": "Olivia - Office (phoenix-4.5)"
+      },
+      "f3": {
+        "replicaId": "r4067604db72",
+        "note": "Lucy - Home (phoenix-4.5)"
+      },
+      "m2": {
+        "replicaId": "r8495a788aa1",
+        "note": "Lee (phoenix-4.5)"
+      },
+      "m3": {
+        "replicaId": "r79996137c01",
+        "note": "Jamie (phoenix-4.5)"
+      }
+    },
+    "heygen": {
+      "f2": {
+        "avatarId": "0f563214-1cb5-4dc0-a2f9-43f44e5e6b57",
+        "voiceId": "4f3b1e99-b580-4f05-9b67-a5f585be0232"
+      },
+      "f3": {
+        "avatarId": "65f9e3c9-d48b-4118-b73a-4ae2e3cbb8f0",
+        "voiceId": "62bbb4b2-bb26-4727-bc87-cfb2bd4e0cc8"
+      },
+      "m2": {
+        "avatarId": "dc2935cf-5863-4f08-943b-c7478aea59fb",
+        "voiceId": "b139a8fe-7240-4454-ac37-8c68aebcee41"
+      },
+      "m3": {
+        "avatarId": "64b526e4-741c-43b6-a918-4e40f3261c7a",
+        "voiceId": "9c8b542a-bf5c-4f4c-9011-75c79a274387"
+      }
+    },
+    "lemonslice": {
+      "f2": {
+        "avatarId": "agent_a1fc5a6f8a7c6d76",
+        "imageUrl": "https://6ammc3n5zzf5ljnz.public.blob.vercel-storage.com/inf2-image-uploads/resized-image-mRFgEr5lqAtGYsplJ0bpbg43Gwjx4D.jpg",
+        "fixedTopic": "clothing"
+      },
+      "f3": {
+        "avatarId": "agent_ce9d76511d157872",
+        "imageUrl": "https://6ammc3n5zzf5ljnz.public.blob.vercel-storage.com/inf2-image-uploads/resized-image-kwjq42DgmDnVqes43fsrKf5GMWZXni.jpg",
+        "fixedTopic": "food"
+      },
+      "m2": {
+        "avatarId": "agent_e5a5ab2793a307bd",
+        "imageUrl": "https://6ammc3n5zzf5ljnz.public.blob.vercel-storage.com/inf2-image-uploads/resized-image-gjxvtJR6JFL15YVPUPO2NiVYEMu0rd.jpg",
+        "fixedTopic": "professions"
+      },
+      "m3": {
+        "avatarId": "agent_566b81d0362eda9f",
+        "imageUrl": "https://6ammc3n5zzf5ljnz.public.blob.vercel-storage.com/inf2-image-uploads/resized-image-uD3MLQD7MDw2dYfhoLPSbPQhMKkiVj.jpg",
+        "fixedTopic": "sports"
+      },
+      "practice": {
+        "avatarId": "agent_6386dd352f86a7ce",
+        "fixedTopic": "transportation"
+      }
+    },
+    "anam": {
+      "f2": {
+        "avatarId": "edf6fdcb-acab-44b8-b974-ded72665ee26",
+        "voiceId": "8cc80a30-4fc0-11f1-84b0-52bacf74fa75",
+        "note": "voice Dana - Balanced Spirit (cartesia)"
+      },
+      "f3": {
+        "avatarId": "cc97774e-853d-4ca0-b31c-d1d927251b00",
+        "voiceId": "9163f669-4fc0-11f1-84b0-52bacf74fa75",
+        "note": "voice Nadia (cartesia)"
+      },
+      "m2": {
+        "avatarId": "9ed85ab6-595b-4491-8f55-94379560e1cf",
+        "voiceId": "91b4ce0f-4fc0-11f1-84b0-52bacf74fa75",
+        "note": "voice Archie (cartesia)"
+      },
+      "m3": {
+        "avatarId": "8bbf1f70-c286-4da9-8bd7-e99fcf9834a6",
+        "voiceId": "45216c5e-1e76-4a7d-9e23-c6fb73507f82",
+        "note": "voice Clarkson (cartesia)"
+      }
+    },
+    "synthesia": {
+      "f2": {
+        "avatarId": "b6db8e17-6f6f-41c1-b624-d5cf2dbe8593"
+      },
+      "f3": {
+        "avatarId": "f9858995-def6-45d5-a8bc-0b367e12533e"
+      },
+      "m2": {
+        "avatarId": "a2250632-b4ad-4bd9-ae01-5ff8320c00c6"
+      },
+      "m3": {
+        "avatarId": "e42b269c-222d-4556-b41d-b86e177ccd56"
+      }
+    }
+  },
+  "slotTopics": {
+    "f2": "clothing",
+    "f3": "food",
+    "m2": "professions",
+    "m3": "sports"
+  },
+  "practiceTopic": "transportation",
+  "mainSlots": [
+    "f2",
+    "f3",
+    "m2",
+    "m3"
+  ],
+  "trainingSlot": "f2"
+}

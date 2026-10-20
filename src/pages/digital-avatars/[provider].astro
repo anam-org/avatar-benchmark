@@ -1,0 +1,112 @@
+---
+export const prerender = false;
+import { AnamAvatar } from "../../components/avatars/AnamAvatar";
+import { HeyGenAvatar } from "../../components/avatars/HeyGenAvatar";
+import { LemonSliceAvatar } from "../../components/avatars/LemonSliceAvatar";
+import { TavusAvatar } from "../../components/avatars/TavusAvatar";
+import Layout from "../../layouts/Layout.astro";
+import providersConfig from "../../config/providers.json";
+
+// REQUIRED is both the per-provider parameter check and the set of
+// providers this page will render.
+
+const VALID_MODELS = ["cara-4"] as const;
+
+// Avatar models an Anam arm may pin, from config/providers.json. A page
+// request naming one not listed there is rejected.
+const ARM_MODELS: string[] = Object.values(
+  providersConfig.anam.arms ?? {},
+).map((a) => a.avatarModel);
+
+const { provider } = Astro.params;
+const q = Astro.url.searchParams;
+
+const avatarId = q.get("avatarId");
+const voiceId = q.get("voiceId");
+const replicaId = q.get("replicaId");
+const topic = q.get("topic");
+const name = q.get("name") || undefined;
+const model = q.get("model");
+const training = q.get("training") === "true";
+const avatarModel = q.get("avatarModel") || undefined;
+
+const REQUIRED: Record<string, string[]> = {
+  anam: ["avatarId", "voiceId", "model", "topic"],
+  tavus: ["replicaId", "topic"],
+  heygen: ["avatarId", "voiceId", "topic"],
+  lemonslice: ["avatarId", "topic"],
+};
+
+const present: Record<string, string | null> = {
+  avatarId,
+  voiceId,
+  replicaId,
+  topic,
+  model,
+};
+
+const known = provider !== undefined && provider in REQUIRED;
+const missing = known
+  ? REQUIRED[provider!].filter((k) => !present[k])
+  : [];
+const badModel =
+  provider === "anam" && model !== null && !VALID_MODELS.includes(model as any);
+// An unknown model is rejected here.
+const badVersion =
+  avatarModel !== undefined && !ARM_MODELS.includes(avatarModel);
+const invalid = !known || missing.length > 0 || badModel || badVersion;
+---
+
+<Layout class="w-screen h-screen bg-black">
+  {
+    invalid ? (
+      <div class="flex items-center justify-center w-full h-full text-white text-center p-5">
+        {!known
+          ? `Unknown provider "${provider}".`
+          : badModel
+            ? `Invalid model. Expected one of: ${VALID_MODELS.join(", ")}.`
+            : `Missing query parameters: ${missing.join(", ")}.`}
+      </div>
+    ) : provider === "anam" ? (
+      <AnamAvatar
+        client:only="react"
+        avatarId={avatarId!}
+        voiceId={voiceId!}
+        model={model as (typeof VALID_MODELS)[number]}
+        avatarModel={avatarModel}
+        topic={topic!}
+        name={name}
+        training={training}
+      />
+    ) : provider === "tavus" ? (
+      <TavusAvatar
+        client:only="react"
+        replicaId={replicaId!}
+        topic={topic!}
+        name={name}
+        training={training}
+      />
+    ) : provider === "heygen" ? (
+      <HeyGenAvatar
+        client:only="react"
+        avatarId={avatarId!}
+        voiceId={voiceId!}
+        topic={topic!}
+        name={name}
+        training={training}
+      />
+    ) : provider === "lemonslice" ? (
+      <LemonSliceAvatar
+        client:only="react"
+        avatarId={avatarId!}
+        topic={topic!}
+        name={name}
+        training={training}
+      />
+    ) : (
+      <div class="flex items-center justify-center w-full h-full text-white text-center p-5">
+        {`No client component for provider "${provider}".`}
+      </div>
+    )
+  }
+</Layout>

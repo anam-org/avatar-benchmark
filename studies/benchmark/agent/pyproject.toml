@@ -1,0 +1,15 @@
+[project]
+name = "avatar-benchmark-agent"
+version = "1.0.0"
+description = "LiveKit agent for the face-layer-isolated avatar benchmark: one shared STT/LLM/TTS pipeline, per-session avatar provider."
+requires-python = ">=3.10"
+dependencies = [
+    "livekit-agents[deepgram,openai,cartesia,anam,tavus,liveavatar,lemonslice,silero,turn-detector]~=1.5",
+    # Synthesia ships outside the livekit-agents extras and pins the agent
+    # floor itself (>=1.8.2).
+    "livekit-plugins-synthesia>=1.8.2",
+    "python-dotenv",
+]
+
+[tool.uv]
+package = false

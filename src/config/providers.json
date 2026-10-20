@@ -1,0 +1,51 @@
+{
+  "pagePaths": {
+    "tavus": "/digital-avatars/tavus",
+    "heygen": "/digital-avatars/heygen",
+    "lemonslice": "/digital-avatars/lemonslice",
+    "anam": "/digital-avatars/anam"
+  },
+  "anam": {
+    "model": "cara-4",
+    "llmId": "65421f1c-c7de-4bc4-ac27-d171c16ef41f",
+    "arms": {
+      "anam-cara-4-1-express": {
+        "avatarModel": "cara-4.1-express"
+      }
+    }
+  },
+  "tavus": {
+    "arms": {
+      "tavus-phoenix-4-5": {
+        "modelName": "phoenix-4.5"
+      }
+    },
+    "personas": {
+      "r291e545fd67": {
+        "main": "pe1d54857d49"
+      },
+      "r55e6793f10f": {
+        "main": "p9d4119f2f77"
+      },
+      "rf8f3aa4b33e": {
+        "main": "pec91d0c4ee6"
+      },
+      "r4ba1277e4fb": {
+        "main": "p888067751c0"
+      },
+      "r4067604db72": {
+        "main": "pb13dbd461be"
+      },
+      "r8495a788aa1": {
+        "main": "p332a202d2cc"
+      },
+      "r79996137c01": {
+        "main": "pac9a8253d96"
+      },
+      "rca764a6a197": {
+        "main": "pfcbf740fbb7",
+        "practice": "pd6f562cc283"
+      }
+    }
+  }
+}

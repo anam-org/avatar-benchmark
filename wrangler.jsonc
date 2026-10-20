@@ -1,0 +1,32 @@
+{
+  // The benchmark study's worker: its name, KV namespace and — via
+  // `wrangler secret` — its own signing secret.
+  //
+  // Copied to the repo root by the deploy workflow BEFORE the build:
+  //
+  //   cp studies/benchmark/wrangler.jsonc wrangler.jsonc
+  //   npm run build && npx wrangler deploy
+  //
+  // The Astro Cloudflare adapter bakes whatever config is at the root into
+  // dist/server/wrangler.json at build time, so passing this file with -c at
+  // deploy time uploads the assets without the worker. Paths are root-relative
+  // for the same reason.
+  "compatibility_date": "2026-03-10",
+  "compatibility_flags": ["nodejs_compat"],
+  "name": "avatar-benchmark",
+  "assets": {
+    // The adapter's generated config redirects here anyway. Naming it
+    // explicitly keeps ./dist/server — which holds a .dev.vars written from
+    // .env — outside the assets root if that redirect is ever absent.
+    "directory": "./dist/client",
+  },
+  "observability": {
+    "enabled": true,
+  },
+  "kv_namespaces": [
+    {
+      "binding": "MANIFEST",
+      "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+    }
+  ],
+}

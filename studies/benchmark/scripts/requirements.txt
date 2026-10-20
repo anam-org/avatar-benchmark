@@ -1,0 +1,9 @@
+# Python dependencies for scripts/ (Python 3.10+).
+#   pip install -r scripts/requirements.txt
+# The LiveKit agent has its own dependency set — see agent/pyproject.toml.
+python-dotenv
+fire
+requests
+# build_evidence_bundle.py: envelope decoding and the .xlsx workbook
+numpy
+openpyxl

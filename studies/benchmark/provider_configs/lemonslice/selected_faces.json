@@ -1,0 +1,18 @@
+{
+  "f2": {
+    "agentId": "agent_a1fc5a6f8a7c6d76",
+    "faceLabel": "Andrea"
+  },
+  "f3": {
+    "agentId": "agent_ce9d76511d157872",
+    "faceLabel": "Amy"
+  },
+  "m2": {
+    "agentId": "agent_e5a5ab2793a307bd",
+    "faceLabel": "Steve"
+  },
+  "m3": {
+    "agentId": "agent_566b81d0362eda9f",
+    "faceLabel": "Dan"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "f2": {
+    "slot": "f2",
+    "studyName": "Mia",
+    "topic": "clothing",
+    "replicaId": "rca764a6a197",
+    "note": "Olivia - Office (phoenix-4.5)",
+    "modelName": "phoenix-4.5"
+  },
+  "f3": {
+    "slot": "f3",
+    "studyName": "Hana",
+    "topic": "food",
+    "replicaId": "r4067604db72",
+    "note": "Lucy - Home (phoenix-4.5)",
+    "modelName": "phoenix-4.5"
+  },
+  "m2": {
+    "slot": "m2",
+    "studyName": "Simon",
+    "topic": "professions",
+    "replicaId": "r8495a788aa1",
+    "note": "Lee (phoenix-4.5)",
+    "modelName": "phoenix-4.5"
+  },
+  "m3": {
+    "slot": "m3",
+    "studyName": "Robert",
+    "topic": "sports",
+    "replicaId": "r79996137c01",
+    "note": "Jamie (phoenix-4.5)",
+    "modelName": "phoenix-4.5"
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "slot": "f2",
+    "mode": "main",
+    "topic": "clothing",
+    "name": "Mia",
+    "replicaId": "rca764a6a197",
+    "arm": "tavus-phoenix-4-5",
+    "personaName": "anam-benchmark-tavus-phoenix-4-5-f2-main",
+    "personaId": "pfcbf740fbb7"
+  },
+  {
+    "slot": "f3",
+    "mode": "main",
+    "topic": "food",
+    "name": "Hana",
+    "replicaId": "r4067604db72",
+    "arm": "tavus-phoenix-4-5",
+    "personaName": "anam-benchmark-tavus-phoenix-4-5-f3-main",
+    "personaId": "pb13dbd461be"
+  },
+  {
+    "slot": "m2",
+    "mode": "main",
+    "topic": "professions",
+    "name": "Simon",
+    "replicaId": "r8495a788aa1",
+    "arm": "tavus-phoenix-4-5",
+    "personaName": "anam-benchmark-tavus-phoenix-4-5-m2-main",
+    "personaId": "p332a202d2cc"
+  },
+  {
+    "slot": "m3",
+    "mode": "main",
+    "topic": "sports",
+    "name": "Robert",
+    "replicaId": "r79996137c01",
+    "arm": "tavus-phoenix-4-5",
+    "personaName": "anam-benchmark-tavus-phoenix-4-5-m3-main",
+    "personaId": "pac9a8253d96"
+  },
+  {
+    "slot": "f2",
+    "mode": "practice",
+    "topic": "transportation",
+    "name": "Mia",
+    "replicaId": "rca764a6a197",
+    "arm": "tavus-phoenix-4-5",
+    "personaName": "anam-benchmark-tavus-phoenix-4-5-f2-practice",
+    "personaId": "pd6f562cc283"
+  }
+]

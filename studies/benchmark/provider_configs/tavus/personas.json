@@ -1,0 +1,42 @@
+[
+  {
+    "slot": "f2",
+    "mode": "main",
+    "topic": "clothing",
+    "name": "Mia",
+    "replicaId": "r291e545fd67",
+    "personaName": "anam-benchmark-f2-main",
+    "personaId": "pe1d54857d49",
+    "arm": "tavus"
+  },
+  {
+    "slot": "f3",
+    "mode": "main",
+    "topic": "food",
+    "name": "Hana",
+    "replicaId": "r55e6793f10f",
+    "personaName": "anam-benchmark-f3-main",
+    "personaId": "p9d4119f2f77",
+    "arm": "tavus"
+  },
+  {
+    "slot": "m2",
+    "mode": "main",
+    "topic": "professions",
+    "name": "Simon",
+    "replicaId": "rf8f3aa4b33e",
+    "personaName": "anam-benchmark-m2-main",
+    "personaId": "pec91d0c4ee6",
+    "arm": "tavus"
+  },
+  {
+    "slot": "m3",
+    "mode": "main",
+    "topic": "sports",
+    "name": "Robert",
+    "replicaId": "r4ba1277e4fb",
+    "personaName": "anam-benchmark-m3-main",
+    "personaId": "p888067751c0",
+    "arm": "tavus"
+  }
+]

@@ -1,0 +1,204 @@
+{
+  "session_cap_seconds": 120,
+  "questions": [
+    {
+      "dimension": "Visual quality",
+      "statement": "The appearance of the avatar was visually pleasing and free of obvious flaws."
+    },
+    {
+      "dimension": "Naturalness",
+      "statement": "The avatar's behavior seemed natural and lifelike."
+    },
+    {
+      "dimension": "Lip sync quality",
+      "statement": "The mouth and facial movements matched the spoken audio."
+    },
+    {
+      "dimension": "Interruptibility",
+      "statement": "I could interrupt the avatar as I would in a natural conversation."
+    },
+    {
+      "dimension": "Response time",
+      "statement": "The avatar\u2019s response time felt natural and as expected in conversation."
+    },
+    {
+      "dimension": "Overall experience",
+      "statement": "I enjoyed talking to this avatar and found the overall experience positive."
+    }
+  ],
+  "categories": [
+    {
+      "label": "Strongly disagree",
+      "score": -2
+    },
+    {
+      "label": "Disagree",
+      "score": -1
+    },
+    {
+      "label": "Neutral",
+      "score": 0
+    },
+    {
+      "label": "Agree",
+      "score": 1
+    },
+    {
+      "label": "Strongly agree",
+      "score": 2
+    }
+  ],
+  "topics": {
+    "animals": "fish, zebra, cat, ant, cow, spider",
+    "clothing": "jeans, sneakers, sunglasses, boots, hat, suit",
+    "food": "apple, pizza, fork, lunch, orange juice, sandwich",
+    "furniture": "chair, table, sofa, bed, desk, dresser, bookshelf, cabinet",
+    "professions": "doctor, teacher, firefighter, pilot, chef, artist, police officer, musician",
+    "sports": "tennis, golf, swimming, diving, basketball, hockey",
+    "transportation": "car, road, bus, bicycle, train, airplane"
+  },
+  "practice_topic": "transportation",
+  "slot_topics": {
+    "f1": "animals",
+    "f2": "clothing",
+    "f3": "food",
+    "m1": "furniture",
+    "m2": "professions",
+    "m3": "sports"
+  },
+  "anam_model": "cara-4",
+  "introduction": "Thank you for participating in our interactive avatar evaluation study!\n\n**Please use a maximised browser window** on a desktop or laptop for this study \u2014 the avatar video fills your window, so bigger is better.\n\nOn the next screen, you will be presented with an interactive avatar. You will be able to talk to the avatar using your microphone.\n\nTogether with the avatar, you will play a game of **20 Questions**. You will pick a word, and the avatar will try to guess what that word is by asking \"yes/no\" questions. You can answer simply with \"yes\" or \"no\", but we encourage you to talk freely to the avatar as you would in a normal conversation. Keep talking to the avatar until the game finishes, which may take up to 2 minutes.\n\nBelow the avatar, you will be presented with six statements. Please indicate how much you agree with each statement after you have finished speaking with the avatar.\n\nAfter a practice round, you will play 8 rounds of 20 Questions with different avatars.\n\n**Please note:** during each conversation, the avatar's video and audio and your microphone audio are recorded and analysed as part of this study.\n\n*If you experience technical issues like avatars not loading, please let us know after the study.*",
+  "livekit_pipeline": {
+    "agentName": "avatar-benchmark-agent",
+    "pipeline": {
+      "stt": {
+        "provider": "deepgram",
+        "model": "nova-3"
+      },
+      "llm": {
+        "provider": "groq",
+        "model": "openai/gpt-oss-120b"
+      },
+      "tts": {
+        "provider": "cartesia",
+        "model": "sonic-3.6",
+        "voicePoolFemale": [
+          {
+            "id": "db6b0ed5-d5d3-463d-ae85-518a07d3c2b4",
+            "name": "Skylar - Friendly Guide",
+            "country": "US"
+          },
+          {
+            "id": "62ae83ad-4f6a-430b-af41-a9bede9286ca",
+            "name": "Gemma - Decisive Agent",
+            "country": "GB"
+          },
+          {
+            "id": "f786b574-daa5-4673-aa0c-cbe3e8534c02",
+            "name": "Katie - Friendly Fixer",
+            "country": "US"
+          },
+          {
+            "id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+            "name": "Jacqueline - Reassuring Agent",
+            "country": "US"
+          },
+          {
+            "id": "2a12b36c-7f9b-4c3a-9f7a-72731b15323a",
+            "name": "Ella - Caring Scout",
+            "country": "AU"
+          },
+          {
+            "id": "f9836c6e-a0bd-460e-9d3c-f7299fa60f94",
+            "name": "Caroline - Southern Guide",
+            "country": "US"
+          },
+          {
+            "id": "e8e5fffb-252c-436d-b842-8879b84445b6",
+            "name": "Cathy - Coworker",
+            "country": "US"
+          },
+          {
+            "id": "c46cf1f6-49a1-4d67-9a57-ff859a4046d3",
+            "name": "Cora - Service Specialist",
+            "country": "GB"
+          },
+          {
+            "id": "2f251ac3-89a9-4a77-a452-704b474ccd01",
+            "name": "Lucy - Capable Coordinator",
+            "country": "GB"
+          },
+          {
+            "id": "c2ad7092-0447-47ea-948b-61fbb6faf153",
+            "name": "Grace - Helpful Hand",
+            "country": "AU"
+          }
+        ],
+        "voicePoolMale": [
+          {
+            "id": "630ed21c-2c5c-41cf-9d82-10a7fd668370",
+            "name": "Corey - Supportive Buddy",
+            "country": "US"
+          },
+          {
+            "id": "ef191366-f52f-447a-a398-ed8c0f2943a1",
+            "name": "Archie - Approachable Mate",
+            "country": "GB"
+          },
+          {
+            "id": "47c38ca4-5f35-497b-b1a3-415245fb35e1",
+            "name": "Daniel - Modern Assistant",
+            "country": "US"
+          },
+          {
+            "id": "5ee9feff-1265-424a-9d7f-8e4d431a12c7",
+            "name": "Ronald - Thinker",
+            "country": "US"
+          },
+          {
+            "id": "b24f41fd-00a3-4cd8-992a-a0c9f13f3ef1",
+            "name": "Clive - Measured Expert",
+            "country": "GB"
+          },
+          {
+            "id": "12e85709-099c-480a-ba3e-875c41a9611a",
+            "name": "Arlo - Service Specialist",
+            "country": "AU"
+          },
+          {
+            "id": "a167e0f3-df7e-4d52-a9c3-f949145efdab",
+            "name": "Blake - Helpful Agent",
+            "country": "US"
+          },
+          {
+            "id": "79f8b5fb-2cc8-479a-80df-29f7a7cf1a3e",
+            "name": "Theo - Modern Narrator",
+            "country": "US"
+          },
+          {
+            "id": "aa2cafe9-97ba-4052-ac3c-875000f95212",
+            "name": "Zander - Composed Advisor",
+            "country": "ZA"
+          },
+          {
+            "id": "65209f8e-6140-4a20-b819-3cc2e21da19b",
+            "name": "Nolan - Expressive Agent",
+            "country": "US"
+          }
+        ]
+      },
+      "interruption": {
+        "enabled": true,
+        "mode": "vad",
+        "min_words": 2
+      }
+    },
+    "pagePaths": {
+      "anam": "/livekit/anam",
+      "tavus": "/livekit/tavus",
+      "heygen": "/livekit/heygen",
+      "lemonslice": "/livekit/lemonslice",
+      "synthesia": "/livekit/synthesia"
+    }
+  }
+}

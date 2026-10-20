@@ -1,0 +1,8 @@
+# Patterns are matched against the path from the context root, so the
+# recursive form is needed to reach nested directories.
+.env
+.env.*
+.venv/
+**/__pycache__/
+**/*.py[cod]
+.DS_Store
